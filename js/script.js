@@ -1,2 +1,2 @@
-// var is deprecated
-var name = 'myName';
+//camelCase, English variable names, JS is case sensitive
+const firstName = 'Mateusz';
