@@ -1,15 +1,13 @@
-const name = 'Mateusz';
-const favMeal = 'burger';
+const firstName = 'Tomek';
+let age = 12;
+age = 18;
 
-console.log('Cześć, jestem ' + name + ' i moim ulubionym daniem jest ' + favMeal + '.');
+const favColor = 'niebieski';
+const favMeal = 'schabowy';
 
-console.log(`Cześć, jestem ${name} i moim ulubionym daniem jest ${favMeal}.`);
+let currentCar;
+currentCar = 'Audi';
 
-const myName = 'Mateusz';
-const petName = 'Miśka';
-
-console.log(`Cześć, jesten ${myName}, a to jest ${petName} - mój królik.`);
-
-const age = 2;
-
-console.log(petName + ' ma już ' + age + ' lata.');
+let firstName2 = 'Ania';
+let age2 = 24;
+favColor = 'czerwony';
