@@ -1,6 +1,7 @@
-let x = 0;
+let x = 20;
 
-while (x <= 10) {
-	console.log(x);
-	x += 2;
-}
+do {
+	x -= 3;
+} while (x > 0);
+
+console.log(x);
