@@ -1,11 +1,11 @@
-const heading = document.querySelector('h1');
-console.log(heading);
+const ulList = document.createElement('ul');
+const liItem = document.createElement('li');
+liItem.textContent = 'cześć';
 
-const paragraphs = document.querySelectorAll('p');
-console.log(paragraphs);
+document.body.appendChild(ulList);
+ulList.appendChild(liItem);
 
-const div = document.querySelector('.test');
-console.log(div);
-
-const paragraphTest = div.querySelector('#test');
-console.log(paragraphTest);
+const myDiv = document.querySelector('#myDiv');
+const pItem = document.createElement('p');
+pItem.textContent = 'myP';
+myDiv.appendChild(pItem);
