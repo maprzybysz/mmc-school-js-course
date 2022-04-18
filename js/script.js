@@ -1,10 +1,9 @@
-const arr = [1, 2, 3, 4];
+const name = 'Lisa';
 
-console.log(arr);
-console.log(...arr);
-
-const numbers = (x, y, ...z) => {
-	console.log(x, y, z);
+const test = () => {
+	const name = 'Lily';
+	console.log(`NAME w funckji - ${name}`);
 };
+test();
 
-numbers(13, 14, 16, 17, 18);
+console.log(`NAME w funckji - ${name}`);
