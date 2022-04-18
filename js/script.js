@@ -1,27 +1,21 @@
-const pass = '2usdsadasd232sda!';
+const day = 'sobota';
 
-// if (pass.length > 10) {
-// 	console.log('Masz dobre hasło');
-// } else {
-// 	console.log('Masz za krótkie hasło');
-// }
-
-// const color = 'blue';
-
-// if (color == 'blue') {
-// 	if (10 > 0) {
-// 		console.log('true');
-// 	} else {
-// 		console.log('false');
-// 	}
-// } else {
-// 	console.log('fasle');
-// }
-
-if (pass.length > 10 && pass.includes('!')) {
-	console.log('Masz rewelacyjne hasło');
-} else if (pass.length > 10) {
-	console.log('Masz dobre hasło');
-} else {
-	console.log('Masz za krótkie hasło');
+switch (day) {
+	case 'poniedziałek':
+		console.log('Dziś jest poniedziałek');
+		break;
+	case 'wtorek':
+		console.log('Dziś jest wtorek');
+		break;
+	case 'środa':
+		console.log('Dziś jest środa');
+		break;
+	case 'czwartek':
+		console.log('Dziś jest czwartek');
+		break;
+	case 'piątek':
+		console.log('Dziś jest piątek');
+		break;
+	default:
+		console.log('Weekend!');
 }
