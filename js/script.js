@@ -1,17 +1,12 @@
-const numbers = [0, 0, 1, 1, 2, 2, 2];
-const colors = ['red', 'green', 'blue', true, 123];
-const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀'];
+const numbers = [0, 10, 23, 100, 252, 258, 2000];
 
-const numbers2 = numbers.slice(0, 2);
-console.log(numbers2);
+function isEven(x) {
+	return x % 2 === 0;
+}
 
-const numbers3 = numbers.slice(numbers.length - 3); // (-3)
-console.log(numbers3);
+console.log(numbers.filter(isEven));
 
-const randomStuff = colors.splice(-2);
-console.log(colors);
-console.log(randomStuff);
+numbers.forEach(number => console.log(number));
+console.log(numbers.includes(0));
 
-const newCars = cars.splice(2, 4, 'test');
-console.log(cars);
-console.log(newCars);
+console.log(numbers.indexOf(23));
