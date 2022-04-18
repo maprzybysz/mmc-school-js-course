@@ -1,12 +1,12 @@
-const numbers = [1, 5, 13, 26, 48];
+const colors = ['red'];
 
-const newNumbers = numbers.map(number => number * 5);
-console.log(newNumbers);
+colors.unshift('gold');
+colors.push('green');
 
-for (const number of newNumbers) {
-	if (number % 2 === 0) {
-		console.log(`Liczba parzysta: ${number}`);
-	} else {
-		console.log(`Liczba nieparzysta: ${number}`);
-	}
+for (let i = 0; i < colors.length; i++) {
+	console.log(`Mój ulubiony kolor to: ${colors[i].toUpperCase()}`);
+}
+
+for (let i = 0; i < colors.length; i++) {
+	console.log(`Mój ulubiony kolor to: ${colors[i].charAt(0).toUpperCase() + colors[i].slice(1)}`);
 }
