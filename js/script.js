@@ -1,6 +1,5 @@
-let i = 0;
+const numbers = [1, 2, 3, 4, 5];
 
-do {
-	console.log(i);
-	i++;
-} while (i < 2);
+for (const number of numbers) {
+	console.log(number);
+}
