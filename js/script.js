@@ -1,7 +1,7 @@
-const letters = ['c', 'd'];
+const numbers = [1, 2, 3, 4];
+const meals = ['pizza', 'burger'];
 
-letters.unshift('a', 'b');
-letters.push('e', 'f');
-console.log(letters);
-
-console.log(letters.includes('c'));
+const numbersMeals = numbers.concat(meals);
+console.log(numbersMeals);
+const numbersMeals2 = [...numbers, ...meals];
+console.log(numbersMeals2);
