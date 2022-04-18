@@ -1,17 +1,7 @@
-function test() {
-	console.log('cześć');
-}
+const heading = document.querySelector('h1');
 
-test();
 
-const helloWorld = function () {
-	console.log('Hello world!');
-};
 
-helloWorld();
-
-function fn(x, y) {
-	console.log(`Podane parametry: ${x} ${y}`);
-}
-
-fn(5, 5);
+heading.addEventListener('click', function () {
+	console.log('Click header');
+});
