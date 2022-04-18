@@ -1,21 +1,6 @@
-const x = 100;
+const x = 50;
+const y = 30;
 
-if (x > 20) {
-	console.log(`${x} > 20`);
-} else {
-	console.log(`${x} < 20`);
+if (x > y) {
+	console.log(`${x} jest większe od ${y}`);
 }
-
-x > 20 ? console.log(`${x} > 20`) : console.log(`${x} < 20`);
-
-const isLoggedIn = true;
-
-function loggedIn() {
-	console.log('Użytkownik jest zalogowany');
-}
-
-function loggedOut() {
-	console.log('Użytkownik nie jest zalogowany');
-}
-
-isLoggedIn ? loggedIn() : loggedOut();
