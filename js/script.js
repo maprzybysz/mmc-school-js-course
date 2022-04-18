@@ -1,3 +1,12 @@
-const x = 11;
+const x = 50;
+let text;
 
-x % 2 === 0 ? console.log(`Liczba ${x} jest parzysta`) : console.log(`Liczba ${x} nie jest parzysta`);
+if (x >= 100) {
+	text = 'X > 100';
+} else if (x < 100 && x > 30) {
+	text = 'X jest średniakiem';
+} else {
+	text = 'X jest mały';
+}
+
+console.log(text.toUpperCase());
