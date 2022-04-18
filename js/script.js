@@ -1,15 +1,19 @@
 const numbers = [1, 2, 3, 4, 5, 6];
 
-const arr = [true, 123, 'abcd', [1, 2, 3]];
+console.log(numbers);
 
-const btn1 = document.querySelector('button:nth-of-type(1)');
-console.log(btn1);
+numbers.unshift(100, 200);
 
-const btns = document.querySelectorAll('button');
-console.log(btns);
+console.log(numbers);
 
-function btnMsg(e) {
-	console.log(`kliknięto ${e.target.textContent}`);
-}
+numbers.shift(numbers);
+console.log(numbers);
 
-btns.forEach(btn => btn.addEventListener('click', btnMsg));
+const colors = ['red', 'green'];
+console.log(colors);
+
+colors.push('gold');
+console.log(colors);
+
+colors.pop();
+console.log(colors);
