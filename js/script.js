@@ -1,19 +1,11 @@
-// const test = document.querySelector('ul li');
-// console.log(test);
+const heading = document.querySelector('h1');
+console.log(heading);
 
-const test2 = document.getElementsByTagName('li');
+const paragraphs = document.querySelectorAll('p');
+console.log(paragraphs);
 
-const ulList = document.querySelector('ul');
-console.log(ulList);
+const div = document.querySelector('.test');
+console.log(div);
 
-const liItem = ulList.querySelector('li');
-console.log(liItem);
-
-const liItems = document.querySelectorAll('li');
-console.log(liItems);
-
-const newLi = document.createElement('li');
-ulList.appendChild(newLi).textContent = 'new';
-
-console.log(liItems.length);
-console.log(test2.length);
+const paragraphTest = div.querySelector('#test');
+console.log(paragraphTest);
