@@ -1,17 +1,26 @@
-const colors = ['red', 'blue'];
+let x = 5;
+const y = 8;
 
-console.log(colors);
+const add = x + y;
+console.log(add);
 
-function test() {
-	console.log('Hello!');
-}
+const substract = x - y;
+console.log(substract);
 
-test();
+const multiply = x * y;
+console.log(multiply);
 
-const person = {
-	name: 'Mefiu',
-	age: 23,
-	favColor: null
-};
+const divide = x / y;
+console.log(divide);
 
-console.log(person);
+x++;
+x++;
+x++;
+
+console.log(x);
+
+x--;
+console.log(x);
+
+const modulo = 10 % 4;
+console.log(modulo);
