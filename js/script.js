@@ -1,11 +1,6 @@
-const animals = ['dog', 'cat', 'fish', 'rabbit'];
+let i = 0;
 
-for (let i = 0; i < animals.length; i++) {
-	console.log(animals[i]);
-}
-
-const colors = ['blue', 'red', 'green'];
-
-for (let i = 0; i < colors.length; i++) {
-	console.log(colors[i]);
+while (i < 5) {
+	console.log(i);
+	i++;
 }
