@@ -1,22 +1,16 @@
-const text1 = 'powiększ mnie!';
-const text2 = 'ZAPISZ MNIE MAŁYMI LITERAMI';
-const text3 = '$#%#^ wytnij te dziwne znaki na początku!';
-const text4 = 'sprawdź, czy zawieram słowo "czy"';
-const text5 = 'wyLoguj w konsoli tylko literę "L", która znajduje się w wyrazie "Wyloguj"';
-const text6 = 'pies zamień każde słowo pies, na słowo kot pies';
-const text7 = 'podziel, ten, string, od, przecinków';
+const num1 = 23;
+const num2 = '45';
 
-console.log('text1');
-console.log(text1.toUpperCase());
-console.log('text2');
-console.log(text2.toLowerCase());
-console.log('text3');
-console.log(text3.slice(6));
-console.log('text4');
-console.log(text4.includes('czy'));
-console.log('text5');
-console.log(text5.charAt(2));
-console.log('text6');
-console.log(text6.replaceAll('pies', 'kot'));
-console.log('text7');
-console.log(text7.split(','));
+console.log(num1 + num2);
+console.log(num2 * 1);
+
+const num3 = 'abcd';
+console.log(num2 * 1);
+
+const num4 = 1351.1255;
+
+console.log(num4.toFixed(2));
+
+const num5 = '123';
+
+console.log(parseInt(num5));
