@@ -1,11 +1,8 @@
-const ulList = document.createElement('ul');
-const liItem = document.createElement('li');
-liItem.textContent = 'cześć';
+const div = document.querySelector('div');
+const p = document.createElement('p');
+const headingTwo = document.createElement('h2');
 
-document.body.appendChild(ulList);
-ulList.appendChild(liItem);
+// div.appendChild(p);
+// div.appendChild(headingTwo);
 
-const myDiv = document.querySelector('#myDiv');
-const pItem = document.createElement('p');
-pItem.textContent = 'myP';
-myDiv.appendChild(pItem);
+div.append(p, headingTwo, 'cześć');
