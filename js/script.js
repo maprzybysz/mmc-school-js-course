@@ -1,5 +1,5 @@
-const numbers = [1, 2, 3, 4, 5];
+const cities = ['Warsaw', 'Madrid', 'London'];
 
-for (const number of numbers) {
-	console.log(number);
+for (let i = 0; i < cities.length; i++) {
+	console.log(`To miasto nazywa się ${cities[i]}`);
 }
