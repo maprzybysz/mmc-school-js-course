@@ -1,12 +1,11 @@
-const x = 50;
-let text;
+const animals = ['dog', 'cat', 'fish', 'rabbit'];
 
-if (x >= 100) {
-	text = 'X > 100';
-} else if (x < 100 && x > 30) {
-	text = 'X jest średniakiem';
-} else {
-	text = 'X jest mały';
+for (let i = 0; i < animals.length; i++) {
+	console.log(animals[i]);
 }
 
-console.log(text.toUpperCase());
+const colors = ['blue', 'red', 'green'];
+
+for (let i = 0; i < colors.length; i++) {
+	console.log(colors[i]);
+}
