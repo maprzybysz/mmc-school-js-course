@@ -1,7 +1,8 @@
-console.log(window);
+const liById = document.getElementById('item');
+console.log(liById);
 
-window.console.log('hello!');
+const ulByTagname = document.getElementsByTagName('li');
+console.log(ulByTagname);
 
-console.log(document);
-
-console.log()
+const elementByClassName = document.getElementsByClassName('test');
+console.log(elementByClassName);
