@@ -1,15 +1,11 @@
-let score;
+let celsius;
+let temp;
 
-const fnOdd = x => console.log(`${x} jest nieparzysta`);
-const fnEven = x => console.log(`${x} jest parzysta`);
-const add = (x, y) => {
-	score = x + y;
-	if (score % 2 === 0) {
-		fnOdd(score);
-	} else {
-		fnEven(score);
-	}
+const fahrenheit = c => {
+	celsius = c;
+	temp = celsius * 1.8 + 32;
+
+	console.log(`${celsius}°C = ${temp}°F`);
 };
 
-add(2, 8);
-add(2, 9);
+fahrenheit(20);
