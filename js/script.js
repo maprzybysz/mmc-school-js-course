@@ -1,16 +1,24 @@
-const num1 = 23;
-const num2 = '45';
+/* 
 
-console.log(num1 + num2);
-console.log(num2 * 1);
+    always null 
 
-const num3 = 'abcd';
-console.log(num2 * 1);
+    false 
+    undefined
+    null
+    0
+    NaN
+    '' - blank string 
 
-const num4 = 1351.1255;
+*/
 
-console.log(num4.toFixed(2));
+let a = true;
+let b = false;
 
-const num5 = '123';
+console.log(a);
+console.log(b);
 
-console.log(parseInt(num5));
+if (0) {
+	console.log('TRUE');
+} else {
+	console.log('FALSE');
+}
