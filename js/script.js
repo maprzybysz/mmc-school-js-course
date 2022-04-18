@@ -1,6 +1,10 @@
-const hello = (name = 'drogi użytkowniku') => {
-	console.log(`Cześć ${name}, jak się masz?`);
+const arr = [1, 2, 3, 4];
+
+console.log(arr);
+console.log(...arr);
+
+const numbers = (x, y, ...z) => {
+	console.log(x, y, z);
 };
 
-hello();
-hello('Mateusz');
+numbers(13, 14, 16, 17, 18);
