@@ -1,26 +1,14 @@
-let x = 5;
-const y = 8;
+console.log(10 == '10');
+console.log(10 === '10');
 
-const add = x + y;
-console.log(add);
+// == - content
+// === - content + type
 
-const substract = x - y;
-console.log(substract);
+console.log(10 != '10');
+console.log(10 !== '10');
+console.log('10' !== '10');
 
-const multiply = x * y;
-console.log(multiply);
-
-const divide = x / y;
-console.log(divide);
-
-x++;
-x++;
-x++;
-
-console.log(x);
-
-x--;
-console.log(x);
-
-const modulo = 10 % 4;
-console.log(modulo);
+console.log(10 > 5);
+console.log(10 < 5);
+console.log(10 <= 10);
+console.log(10 >= 10);
