@@ -1,13 +1,17 @@
-const cars = 'Audi,Mercedes,BMW,Nissan,Dodge';
-console.log(cars);
-
-const carsArray = cars.split(',');
-console.log(carsArray);
-
-carsArray.length > 3 ? console.log('Jest OK') : console.log('Nie jest OK');
-
-if (carsArray.includes('Audi')) {
-	carsArray.push('Mazda');
-} else {
-	carsArray.pop();
+function test() {
+	console.log('cześć');
 }
+
+test();
+
+const helloWorld = function () {
+	console.log('Hello world!');
+};
+
+helloWorld();
+
+function fn(x, y) {
+	console.log(`Podane parametry: ${x} ${y}`);
+}
+
+fn(5, 5);
