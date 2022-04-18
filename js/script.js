@@ -1,19 +1,22 @@
 const numbers = [1, 2, 3, 4, 5, 6];
 
+function multiply(x) {
+	return x * 2;
+}
+
 console.log(numbers);
+const newNumbers = numbers.map(multiply);
+console.log(newNumbers);
 
-numbers.unshift(100, 200);
+const abc = ['a', 'b', 'c'];
+const newAbc = numbers.concat(abc);
+console.log(newAbc);
 
-console.log(numbers);
+console.log(abc);
+console.log(...abc);
 
-numbers.shift(numbers);
-console.log(numbers);
+const drinks = ['pepsi', 'juice'];
+const meals = ['soup'];
 
-const colors = ['red', 'green'];
-console.log(colors);
-
-colors.push('gold');
-console.log(colors);
-
-colors.pop();
-console.log(colors);
+const menu = [...drinks, ...meals];
+console.log(menu);
