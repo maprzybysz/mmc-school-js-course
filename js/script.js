@@ -1,14 +1,9 @@
-console.log(10 == '10');
-console.log(10 === '10');
+// && - and
+// || - or
+// ! - negation
 
-// == - content
-// === - content + type
-
-console.log(10 != '10');
-console.log(10 !== '10');
-console.log('10' !== '10');
-
-console.log(10 > 5);
-console.log(10 < 5);
-console.log(10 <= 10);
-console.log(10 >= 10);
+if (true && !false) {
+	console.log('true');
+} else {
+	console.log('false');
+}
