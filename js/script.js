@@ -1,7 +1,13 @@
-const text = 'abcd';
+const msg = 'testowa wiadomość';
 
-console.log(typeof text);
+console.log(msg.length);
 
-const quote = 'Jegomość powiedział - "kocham schabowe!"';
+const newMsg = msg.toUpperCase();
 
-console.log(quote);
+console.log(newMsg);
+
+const username = 'mefiu';
+
+const newUsername = username.charAt(0).toUpperCase() + username.slice(1);
+
+console.log(newUsername);
