@@ -1,12 +1,13 @@
-const colors = ['red'];
+const cars = 'Audi,Mercedes,BMW,Nissan,Dodge';
+console.log(cars);
 
-colors.unshift('gold');
-colors.push('green');
+const carsArray = cars.split(',');
+console.log(carsArray);
 
-for (let i = 0; i < colors.length; i++) {
-	console.log(`Mój ulubiony kolor to: ${colors[i].toUpperCase()}`);
-}
+carsArray.length > 3 ? console.log('Jest OK') : console.log('Nie jest OK');
 
-for (let i = 0; i < colors.length; i++) {
-	console.log(`Mój ulubiony kolor to: ${colors[i].charAt(0).toUpperCase() + colors[i].slice(1)}`);
+if (carsArray.includes('Audi')) {
+	carsArray.push('Mazda');
+} else {
+	carsArray.pop();
 }
