@@ -1,14 +1,15 @@
-const numbers = [0.5, 4, 'abc'];
-const names = ['Lisa', 'Lily', 'Adam'];
+let score;
 
-numbers.forEach(num => console.log(num * num));
-
-const bigNames = names.map(name => name.toUpperCase());
-console.log(bigNames);
-
-const showBignames = name => {
-	return name.toUpperCase();
+const fnOdd = x => console.log(`${x} jest nieparzysta`);
+const fnEven = x => console.log(`${x} jest parzysta`);
+const add = (x, y) => {
+	score = x + y;
+	if (score % 2 === 0) {
+		fnOdd(score);
+	} else {
+		fnEven(score);
+	}
 };
 
-const newNames = names.map(showBignames);
-console.log(newNames);
+add(2, 8);
+add(2, 9);
