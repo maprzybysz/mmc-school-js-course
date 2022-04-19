@@ -1,16 +1,29 @@
-const wrapper = document.querySelector('.wrapper');
-const ulList = document.createElement('ul');
+const div = document.querySelector('.square');
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
+const p1 = document.querySelector('.p1');
+const p2 = document.querySelector('.p2');
 
-for (let i = 0; i < 10; i++) {
-	const liItem = document.createElement('li');
-	liItem.textContent = i;
-	ulList.append(liItem);
-}
+const helloFn = () => {
+	console.log('cześć');
+};
 
-wrapper.append(ulList);
+const blueFn = () => {
+	div.style.backgroundColor = 'blue';
+};
 
-const lastElement = ulList.lastChild;
-lastElement.textContent = 'Jestem ostatnim elementem';
-lastElement.style.backgroundColor = 'royalblue';
-lastElement.style.padding = '20px 40px';
-lastElement.style.fontSize = '48px';
+const redFn = () => {
+	div.style.backgroundColor = 'red';
+};
+
+const toggleFn = () => {
+	p1.classList.toggle('show');
+	p2.classList.toggle('show');
+};
+
+btn1.addEventListener('dblclick', helloFn);
+
+div.addEventListener('mouseover', redFn);
+div.addEventListener('mouseout', blueFn);
+
+btn2.addEventListener('click', toggleFn);
