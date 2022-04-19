@@ -1,9 +1,6 @@
-const btn = document.querySelector('button');
+const div = document.querySelector('div');
+const p = document.querySelector('p');
 
-console.log(btn.outerHTML);
-console.log(btn.innerHTML);
+// div.removeChild(p);
 
-btn.innerHTML = '<li>123</li>';
-
-console.log(btn.innerText);
-console.log(btn.textContent);
+p.remove();
