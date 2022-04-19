@@ -1,8 +1,9 @@
-const div = document.querySelector('div');
-const p = document.createElement('p');
-const headingTwo = document.createElement('h2');
+const btn = document.querySelector('button');
 
-// div.appendChild(p);
-// div.appendChild(headingTwo);
+console.log(btn.outerHTML);
+console.log(btn.innerHTML);
 
-div.append(p, headingTwo, 'cześć');
+btn.innerHTML = '<li>123</li>';
+
+console.log(btn.innerText);
+console.log(btn.textContent);
