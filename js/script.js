@@ -1,19 +1,17 @@
+// const allCircles = document.getElementsByClassName('circle');
+const allCircles = document.querySelectorAll('.circle');
 const lime = document.querySelector('.lime');
-const blue = document.querySelector('.blue');
 const gold = document.querySelector('.gold');
 
-const infoLime = () => {
-	console.log('%clime', 'color: lime; text-transform: uppercase');
-};
+const newCircle = document.createElement('div');
+newCircle.classList.add('circle', 'purple');
+gold.append(newCircle);
 
-const infoBlue = () => {
-	console.log('%cblue', 'color: blue; text-transform: uppercase');
-};
+// allCircles.forEach(circle => circle.addEventListener('click', () => console.log(circle)));
 
-const infoGold = e => {
-	e.stopPropagation();
-	console.log('%cgold', 'color: gold; text-transform: uppercase');
-};
-
-blue.addEventListener('click', infoBlue);
-gold.addEventListener('click', infoGold);
+lime.addEventListener('click', e => {
+	if (e.target.matches('.circle2')) {
+		console.log(e.target);
+		console.log('test');
+	}
+});
