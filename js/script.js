@@ -1,8 +1,20 @@
-const div = document.querySelector('div');
+const addBtn = document.querySelector('.add');
+const removeBtn = document.querySelector('.remove');
+const toggleBtn = document.querySelector('.toggle');
+const text = document.querySelector('p');
 
-div.style.fontSize = '48px';
-div.style.backgroundColor = 'tomato';
-div.style.padding = '20px 40px';
-div.style.borderRadius = '8px';
+const addClass = () => {
+	text.classList.add('test');
+};
 
-// div.classList.add('className');
+const removeClass = () => {
+	text.classList.remove('test');
+};
+addBtn.addEventListener('click', addClass);
+removeBtn.addEventListener('click', removeClass);
+
+const toggleClass = () => {
+	text.classList.toggle('test');
+};
+
+toggleBtn.addEventListener('click', toggleClass);
