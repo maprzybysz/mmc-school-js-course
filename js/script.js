@@ -1,7 +1,7 @@
-const test = () => {
-	console.log('hello');
-};
+'use strict';
 
-// setTimeout(test, 1000);
+const colors = ['red', 'green', 'blue'];
 
-setInterval(test, 1000);
+for (const color of colors) {
+	console.log(color);
+}
