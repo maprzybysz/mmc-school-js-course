@@ -1,11 +1,10 @@
-const img = document.querySelector('img');
-console.log(img);
+const liList = document.querySelectorAll('li');
 
-img.setAttribute(
-	'src',
-	'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Herb_Legii_1343x1343.png/800px-Herb_Legii_1343x1343.png'
-);
+for (let i = 0; i < liList.length; i++) {
+	liList[i].textContent = i + 1;
+	liList[i].dataset.id = i + 1;
+}
 
-img.setAttribute('alt', 'herb');
+const li = document.querySelector('[data-id="3"]');
 
-setTimeout(() => console.log('late'), 2000);
+console.log(li.parentElement.parentElement);
