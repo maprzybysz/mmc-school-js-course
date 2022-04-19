@@ -1,5 +1,12 @@
-// console.log(Math);
+const link = document.querySelector('a');
+const img = document.querySelector('img');
+const p = document.querySelector('p');
 
-const number = Math.random() * 10;
+link.setAttribute('href', '#');
+link.setAttribute('target', '_blank');
 
-console.log(Math.floor(number));
+console.log(img.getAttribute('alt'));
+
+console.log(p.hasAttribute('style'));
+
+p.removeAttribute('style');
