@@ -1,7 +1,10 @@
-'use strict';
+// alert('hello!');
 
-const colors = ['red', 'green', 'blue'];
+// if (confirm('Tak czy nie?')) {
+// 	console.log('tak');
+// } else {
+// 	console.log('nie');
+// }
 
-for (const color of colors) {
-	console.log(color);
-}
+const name = prompt('Cześć, jak masz na imię?');
+console.log(name);
