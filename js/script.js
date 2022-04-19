@@ -1,15 +1,15 @@
-console.log('hello');
+const arrowBtn = document.querySelector('.arrow');
+const arrowIcon = document.querySelector('.fas');
+const img = document.querySelector('.item1');
 
-console.warn('warning');
+const showImg = () => {
+	img.classList.toggle('hide');
 
-console.error('error');
+	if (img.classList.contains('hide')) {
+		arrowIcon.style.transform = 'rotate(-180deg)';
+	} else {
+		arrowIcon.style.transform = 'rotate(0)';
+	}
+};
 
-const persons = [
-	{
-		name: 'Mefiu',
-		age: '23'
-	},
-	{ name: 'Kate', age: '23' }
-];
-
-console.table(persons);
+arrowBtn.addEventListener('click', showImg);
