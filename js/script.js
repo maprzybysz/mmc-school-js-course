@@ -1,7 +1,19 @@
-const btn = document.querySelector('button');
+const lime = document.querySelector('.lime');
+const blue = document.querySelector('.blue');
+const gold = document.querySelector('.gold');
 
-const test = e => {
-	console.log(e.target.classList);
+const infoLime = () => {
+	console.log('%clime', 'color: lime; text-transform: uppercase');
 };
 
-btn.addEventListener('click', test);
+const infoBlue = () => {
+	console.log('%cblue', 'color: blue; text-transform: uppercase');
+};
+
+const infoGold = () => {
+	console.log('%cgold', 'color: gold; text-transform: uppercase');
+};
+
+lime.addEventListener('click', infoLime, { capture: true });
+blue.addEventListener('click', infoBlue, { capture: true });
+gold.addEventListener('click', infoGold, { capture: true });
