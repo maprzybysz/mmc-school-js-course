@@ -10,10 +10,10 @@ const infoBlue = () => {
 	console.log('%cblue', 'color: blue; text-transform: uppercase');
 };
 
-const infoGold = () => {
+const infoGold = e => {
+	e.stopPropagation();
 	console.log('%cgold', 'color: gold; text-transform: uppercase');
 };
 
-lime.addEventListener('click', infoLime, { capture: true });
-blue.addEventListener('click', infoBlue, { capture: true });
-gold.addEventListener('click', infoGold, { capture: true });
+blue.addEventListener('click', infoBlue);
+gold.addEventListener('click', infoGold);
