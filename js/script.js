@@ -1,10 +1,11 @@
-const grandpa = document.querySelector('.grandparent');
-// console.log(grandpa.querySelector('.parent'));
+const img = document.querySelector('img');
+console.log(img);
 
-const middleChild = document.querySelector('.middle-child');
+img.setAttribute(
+	'src',
+	'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Herb_Legii_1343x1343.png/800px-Herb_Legii_1343x1343.png'
+);
 
-const prevSibling = middleChild.previousElementSibling;
+img.setAttribute('alt', 'herb');
 
-const nextSibling = middleChild.nextElementSibling;
-
-const parentEl = middleChild.parentElement;
+setTimeout(() => console.log('late'), 2000);
