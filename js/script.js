@@ -1,10 +1,5 @@
-// alert('hello!');
+// console.log(Math);
 
-// if (confirm('Tak czy nie?')) {
-// 	console.log('tak');
-// } else {
-// 	console.log('nie');
-// }
+const number = Math.random() * 10;
 
-const name = prompt('Cześć, jak masz na imię?');
-console.log(name);
+console.log(Math.floor(number));
