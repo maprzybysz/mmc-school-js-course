@@ -1,10 +1,15 @@
-const liList = document.querySelectorAll('li');
+console.log('hello');
 
-for (let i = 0; i < liList.length; i++) {
-	liList[i].textContent = i + 1;
-	liList[i].dataset.id = i + 1;
-}
+console.warn('warning');
 
-const li = document.querySelector('[data-id="3"]');
+console.error('error');
 
-console.log(li.parentElement.parentElement);
+const persons = [
+	{
+		name: 'Mefiu',
+		age: '23'
+	},
+	{ name: 'Kate', age: '23' }
+];
+
+console.table(persons);
