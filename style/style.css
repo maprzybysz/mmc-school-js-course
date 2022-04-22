@@ -5,45 +5,22 @@
 }
 
 body {
-	background-color: #1e1d23;
-	font-size: 36px;
-}
-
-.item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
-	background-size: cover;
-	transition: 0.6s;
+	flex-direction: column;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	background-color: rgba(82, 82, 82);
 }
 
-.item1 {
-	height: 40px;
-	background-image: url('https://cdn.pixabay.com/photo/2019/06/07/10/44/sunset-4257963_960_720.jpg');
+div {
+	padding: 50px;
 }
 
-.item2 {
-	height: 300px;
-	background-image: url('https://pixabay.com/get/ga973bf4c6ade2d0bbf2cded939ed850742c5082a01095d80065dba2f6bb9dd93b6dde850a8bf8117dd181b2c010499f41a6f570a82f732f227fa0d0e40bb59d1722632f23f7a3791fcf840bc3d30e25c_1920.jpg');
-	background-position: center;
-}
-
-.hide {
-	height: 300px;
-}
-
-.background {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.2);
-}
-
-section {
-	display: flex;
-	justify-content: center;
-	margin-top: 50px;
+p {
+	font-size: 36px;
 }
 
 button {
@@ -54,6 +31,7 @@ button {
 	border-radius: 5px;
 	color: #00cfff;
 	font-size: 36px;
+	text-transform: uppercase;
 	cursor: pointer;
 	transition: color 0.3s, box-shadow 0.3s;
 	box-shadow: 3px 3px 10px #00cfff;
@@ -62,8 +40,4 @@ button {
 button:hover {
 	color: #00ffae;
 	box-shadow: 3px 3px 10px #00ffae;
-}
-
-.fas {
-	transition: transform 0.6s;
 }
