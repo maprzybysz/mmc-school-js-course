@@ -1,55 +1,13 @@
-const conventer = document.querySelector('#converter');
-const result = document.querySelector('.result');
-const convBtn = document.querySelector('.conv');
-const resetBtn = document.querySelector('.reset');
-const changeBtn = document.querySelector('.change');
-const one = document.querySelector('.one');
-const two = document.querySelector('.two');
+const burgerBtn = document.querySelector('.burger');
+const barsIco = document.querySelector('.fa-bars');
+const xIco = document.querySelector('.fa-times');
+const nav = document.querySelector('nav ul');
 
-let fahrenheit;
-let celsius;
-
-const swap = () => {
-	if (one.textContent === '°C') {
-		one.textContent = '°F';
-		two.textContent = '°C';
-		result.textContent = '';
-	} else {
-		one.textContent = '°C';
-		two.textContent = '°F';
-		result.textContent = '';
-	}
+const handleNav = () => {
+	nav.classList.toggle('active');
+	burgerBtn.classList.toggle('active');
+	barsIco.classList.toggle('hide');
+	xIco.classList.toggle('hide');
 };
 
-const fahrToCel = () => {
-	fahrenheit = conventer.value * 1.8 + 32;
-	result.textContent = `${conventer.value}°C to ${fahrenheit.toFixed(1)}°F`;
-	conventer.value = '';
-};
-
-const celToFahr = () => {
-	celsius = (conventer.value - 32) / 1.8;
-	result.textContent = `${conventer.value}°F to ${celsius.toFixed(1)}°C`;
-	conventer.value = '';
-};
-
-const conversion = () => {
-	if (conventer.value !== '') {
-		if (one.textContent === '°C') {
-			fahrToCel();
-		} else {
-			celToFahr();
-		}
-	} else {
-		result.textContent = 'Musisz podać jakąś wartość!';
-	}
-};
-
-const reset = () => {
-	conventer.value = '';
-	result.textContent = '';
-};
-
-changeBtn.addEventListener('click', swap);
-convBtn.addEventListener('click', conversion);
-resetBtn.addEventListener('click', reset);
+burgerBtn.addEventListener('click', handleNav);
