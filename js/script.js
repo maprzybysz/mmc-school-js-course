@@ -1,27 +1,34 @@
-function Person(name, age) {
-	this.name = name;
-	this.age = age;
+class Animal {
+	constructor(name) {
+		this.name = name;
+	}
+
+	sound() {
+		console.log(`Zwierzak robi "hau hau.`);
+	}
 }
 
-Person.prototype.sayHi = function () {
-	console.log(`Cześć, jestem ${this.name}.`);
-};
-
-const person1 = new Person('Mateusz', 23);
-person1.sayHi();
-
-class Person2 {
+class Dog extends Animal {
 	constructor(name, age) {
-		this.name = name;
+		super(name);
 		this.age = age;
 	}
 
-	sayHi() {
-		console.log(`Cześć, jestem ${this.name}.`);
+	test() {
+		console.log('test');
 	}
 }
 
-const person2 = new Person2('Mefiu', 24);
+class Cat extends Animal {
+	sound() {
+		console.log('miau');
+	}
+}
 
-person2.sayHi();
-console.log(person2);
+const dog = new Dog('puszek', 6);
+
+console.log(dog);
+dog.sound();
+
+const cat = new Cat('okruszek');
+cat.sound();
