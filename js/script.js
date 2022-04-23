@@ -1,11 +1,21 @@
-const name = 'something';
+function User(name, age) {
+	this.name = name;
+	this.age = age;
 
-const user = {
-	name: 'Mateusz',
-	showName() {
-		console.log(this);
-		console.log(this.name);
-	}
-};
+	this.hello = function () {
+		console.log(`Cześć ${this.name}!`);
+	};
+}
 
-user.showName();
+// class User {
+// 	constructor(name, age) {
+// 		this.name = name;
+// 		this.age = age;
+// 	}
+// }
+
+const newUser = new User('Mateusz', 23);
+
+console.log(newUser);
+
+newUser.hello();
