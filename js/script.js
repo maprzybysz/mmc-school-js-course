@@ -1,18 +1,12 @@
-function test() {
-	console.log(this);
-	console.log(this.name);
+const movie = {
+	title: 'Avengers'
+};
+
+function showMovie(price, cinema) {
+	console.log(`Film ${this.title}, cena: ${price}, kino: ${cinema}.`);
 }
 
-const car1 = {
-	name: 'Audi'
-};
+showMovie(30, 'SuperKINO');
 
-const car2 = {
-	name: 'Doge'
-};
-
-const car3 = {
-	name: 'BMW'
-};
-
-test.bind(car1)();
+showMovie.call(movie, 35, 'SUperKINO2');
+showMovie.apply(movie, [35, 'SuperKINO2']);
