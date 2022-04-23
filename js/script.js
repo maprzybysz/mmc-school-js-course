@@ -1,26 +1,8 @@
-// const myObject = {
-// 	key: value
-// };
-
-// const user = {
-// 	name: 'Lisa',
-// 	age: 23
-// };
-
-// user.country = 'Polska';
-
-// console.log(user);
-
-const dogName = 'Drops';
-const dogAge = 5;
-
-const dog = {
-	// name: dogName,
-	// age: dogAge
-	// dogName: dogName,
-	// dogAge: dogAge
-	dogName,
-	dogAge
+const user = {
+	name: 'Mateusz',
+	age: 23
 };
 
-console.log(dog);
+for (const data in user) {
+	console.log(data + ': ' + user[data]);
+}
