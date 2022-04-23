@@ -1,12 +1,27 @@
-const movie = {
-	title: 'Avengers'
-};
-
-function showMovie(price, cinema) {
-	console.log(`Film ${this.title}, cena: ${price}, kino: ${cinema}.`);
+function Person(name, age) {
+	this.name = name;
+	this.age = age;
 }
 
-showMovie(30, 'SuperKINO');
+Person.prototype.sayHi = function () {
+	console.log(`Cześć, jestem ${this.name}.`);
+};
 
-showMovie.call(movie, 35, 'SUperKINO2');
-showMovie.apply(movie, [35, 'SuperKINO2']);
+const person1 = new Person('Mateusz', 23);
+person1.sayHi();
+
+class Person2 {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	sayHi() {
+		console.log(`Cześć, jestem ${this.name}.`);
+	}
+}
+
+const person2 = new Person2('Mefiu', 24);
+
+person2.sayHi();
+console.log(person2);
