@@ -1,31 +1,30 @@
-// console.log(this);
+const btns = document.querySelectorAll('button');
 
-// function test() {
-// 	console.log(this);
-// }
-
-// test();
-
-const person = {
-	name: 'Mefiu',
-	// showInfo() {
+btns.forEach(btn =>
+	// btn.addEventListener('click', function () {
 	// 	console.log(this);
-	// 	console.log(this.name);
-	// }
-	address: {
-		city: 'Kraków',
-		showCity: function () {
-			console.log(this);
-		}
+	// })
+	// btn.addEventListener('click', function (e) {
+	// 	console.log(e.target);
+	// })
+	btn.addEventListener('click', e => {
+		console.log(this.textContent);
+		console.log(e.target.textContent);
+	})
+);
+
+const ob = {
+	number: 123,
+	showNumber() {
+		console.log(this.number);
+	},
+	showNumber2() {
+		const test = () => {
+			console.log(this.number);
+		};
+		test();
 	}
 };
-person.address.showCity();
 
-function Food(name) {
-	this.name = name;
-}
-
-const meal1 = new Food('schabowy');
-const meal2 = new Food('pepsi');
-
-console.log(meal1, meal2);
+ob.showNumber();
+ob.showNumber2;
