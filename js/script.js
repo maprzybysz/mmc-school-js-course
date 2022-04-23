@@ -1,34 +1,19 @@
-class Animal {
-	constructor(name) {
-		this.name = name;
-	}
+const user = {
+	name: 'Mateusz',
+	age: 23
+};
 
-	sound() {
-		console.log(`Zwierzak robi "hau hau.`);
-	}
-}
+const pet = {
+	name: 'Drops',
+	type: 'dog'
+};
 
-class Dog extends Animal {
-	constructor(name, age) {
-		super(name);
-		this.age = age;
-	}
+const userInfo = Object.assign({}, user, pet);
+console.log(user);
+console.log(pet);
+console.log(userInfo);
 
-	test() {
-		console.log('test');
-	}
-}
-
-class Cat extends Animal {
-	sound() {
-		console.log('miau');
-	}
-}
-
-const dog = new Dog('puszek', 6);
-
-console.log(dog);
-dog.sound();
-
-const cat = new Cat('okruszek');
-cat.sound();
+const userCopy = Object.assign({}, user);
+userCopy.age = 25;
+console.log(userCopy);
+console.log(user);
