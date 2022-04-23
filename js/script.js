@@ -1,8 +1,11 @@
+const name = 'something';
+
 const user = {
 	name: 'Mateusz',
-	age: 23
+	showName() {
+		console.log(this);
+		console.log(this.name);
+	}
 };
 
-for (const data in user) {
-	console.log(data + ': ' + user[data]);
-}
+user.showName();
