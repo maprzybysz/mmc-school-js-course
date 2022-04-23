@@ -7,8 +7,14 @@ const newUser = {
 	age: 23,
 	car: {
 		brand: 'BMW',
-		model: 'M5'
+		model: 'M5',
+		// sound: () => {
+		// 	console.log('brum brum');
+		// }
+		sound() {
+			console.log('brum brum');
+		}
 	}
 };
 
-console.log(newUser);
+newUser.car.sound();
