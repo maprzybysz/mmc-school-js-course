@@ -1,9 +1,16 @@
-const user = {
-	name: 'Mateusz',
-	age: 24
-};
+const btn = document.querySelector('button');
 
-// const obj = {
-// 	"name": "Mateusz",
-// 	"age": 23
-// };
+btn.addEventListener('click', () => {
+	console.log('wykonuje się pierwszy!');
+	const p = document.createElement('p');
+	alert('stworzyłem paragraf!');
+	p.textContent = 'test';
+	document.body.append(p);
+	console.log('koniec');
+});
+
+console.log(1);
+setTimeout(() => {
+	console.log(2);
+}, 800);
+console.log(3);
