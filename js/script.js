@@ -1,16 +1,38 @@
-const btn = document.querySelector('button');
+// setTimeout(() => {
+// 	console.log(1);
+// 	setTimeout(() => {
+// 		console.log(2);
+// 		setTimeout(() => {
+// 			console.log(3);
+// 			setTimeout(() => {
+// 				console.log(4);
+// 				setTimeout(() => {
+// 					console.log(5);
+// 				}, 300);
+// 			}, 300);
+// 		}, 300);
+// 	}, 300);
+// }, 300);
 
-btn.addEventListener('click', () => {
-	console.log('wykonuje się pierwszy!');
-	const p = document.createElement('p');
-	alert('stworzyłem paragraf!');
-	p.textContent = 'test';
-	document.body.append(p);
-	console.log('koniec');
+// const newPromise = () => {};
+
+// newPromise()
+// 	.then(() => {
+// 		console.log('1');
+// 		return newPromise();
+// 	})
+// 	.then(() => {
+// 		console.log('1');
+// 		return newPromise();
+// 	})
+// 	.catch(err => console.log(err));
+
+const test = new Promise((resolve, reject) => {
+	if (true) {
+		resolve('jest ok');
+	} else {
+		reject('blad');
+	}
 });
 
-console.log(1);
-setTimeout(() => {
-	console.log(2);
-}, 800);
-console.log(3);
+test.then(info => console.log(info)).catch(err => console.log(err));
