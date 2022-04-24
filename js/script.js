@@ -1,9 +1,11 @@
-const colors = ['red', 'green', 'blue'];
+const btn = document.querySelector('button');
+const img = document.querySelector('img');
 
-const firstColor = colors[0];
-const secondColor = colors[1];
+const URL = 'https://dog.ceo/api/breeds/image/random';
 
-const [first, second] = colors;
-
-console.log(firstColor, secondColor);
-console.log(first, second);
+btn.addEventListener('click', () => {
+	fetch(URL)
+		.then(res => res.json())
+		.then(data => img.setAttribute('src', data.message))
+		.catch(err => console.error(err));
+});
