@@ -1,19 +1,14 @@
+const one = document.querySelector('.one');
+const two = document.querySelector('.two');
+const three = document.querySelector('.three');
+
 const URL = 'https://dog.ceo/api/breeds/image/random';
 
-fetch(URL)
-	.then(res => res.json())
-	.then(data => console.log(data))
-	.catch(error => console.error(error));
+axios.get(URL).then(res => two.setAttribute('src', res.data.message));
 
-async function test() {
-	try {
-		const res = await fetch(URL);
-		const data = await res.json();
-
-		console.log(data);
-	} catch {
-		console.error(error);
-	}
+async function showImage() {
+	const res = await axios.get(URL);
+	three.setAttribute('src', res.data.message);
 }
 
-test();
+showImage();
