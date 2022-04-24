@@ -1,11 +1,9 @@
-const btn = document.querySelector('button');
-const img = document.querySelector('img');
+const user = {
+	name: 'Mateusz',
+	age: 24
+};
 
-const URL = 'https://dog.ceo/api/breeds/image/random';
-
-btn.addEventListener('click', () => {
-	fetch(URL)
-		.then(res => res.json())
-		.then(data => img.setAttribute('src', data.message))
-		.catch(err => console.error(err));
-});
+// const obj = {
+// 	"name": "Mateusz",
+// 	"age": 23
+// };
